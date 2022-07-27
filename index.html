@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Bài 1 -->
+
+    <div class="container">
+      <div class="col-6">
+        <h1>Bài 1</h1>
+        <div class="form-group">
+          <label>Nhập điểm chuẩn:</label>
+          <input type="text" id="diemChuan" class="form-control" />
+
+          <label>Chọn khu vực:</label>
+          <select class="form-control" id="khuVuc">
+            <option value="X">X</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+
+          <label>Chọn đối tượng:</label>
+          <select class="form-control" id="doiTuong">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <label>Nhập điểm môn thứ 1:</label>
+          <input type="text" id="monThu1" class="form-control" />
+
+          <label>Nhập điểm môn thứ 2:</label>
+          <input type="text" id="monThu2" class="form-control" />
+
+          <label>Nhập điểm môn thứ 3:</label>
+          <input type="text" id="monThu3" class="form-control" />
+
+          <button class="btn btn-success my-2" id="ketQua">Kết quả</button>
+
+          <div id="result1" class="bg-warning py-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <!-- Bài 2 -->
+    <div class="container">
+      <div class="col-6">
+        <h1>Bài 2</h1>
+        <div class="form-group">
+          <label>Tên khách hàng:</label>
+          <input type="text" id="name" class="form-control" />
+
+          <label>Số điện tiêu thụ:</label>
+          <input type="text" id="dienTieuThu" class="form-control" />
+
+          <button class="btn btn-success my-2" id="tinhTienDien">
+            Tính tiền điện
+          </button>
+
+          <div id="result2" class="bg-warning py-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <!-- Bài 3 -->
+    <div class="container">
+      <div class="col-6">
+        <h1>Bài 3</h1>
+        <div class="form-group">
+          <label>Họ tên:</label>
+          <input type="text" id="name3" class="form-control" />
+
+          <label>Tổng thu nhập năm:</label>
+          <input type="text" id="tongThu" class="form-control" />
+
+          <label>Số người phụ thuộc:</label>
+          <input type="text" id="nguoiPhuThuoc" class="form-control" />
+
+          <button class="btn btn-success my-2" id="tinhThue">
+            Tính thuế thu nhập
+          </button>
+
+          <div id="result3" class="bg-warning py-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <!-- Bài 4 -->
+    <div class="container">
+      <div class="col-6">
+        <h1>Bài 4</h1>
+        <div class="form-group">
+
+          <label>Loại khách hàng:</label>
+          <select class="form-control" id="loaiKhach" onchange="popup()">
+            <option value="nhaDan">Nhà dân</option>
+            <option value="doanhNghiep">Doanh nghiệp</option>
+          </select>
+
+          <div id="khachDoanhNghiep"></div>
+
+          <label>Mã khách hàng:</label>
+          <input type="text" id="maKH" class="form-control" />
+
+          <label>Số kênh cao cấp:</label>
+          <input type="text" id="soKenhCaoCap" class="form-control" />
+
+          <button class="btn btn-success my-2" id="tinhTienCap">
+            Tính tiền cáp
+          </button>
+
+          <div id="result4" class="bg-warning py-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
